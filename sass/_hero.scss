@@ -1,0 +1,95 @@
+.hero{
+    padding: 96px 0;
+    background-color: #F5F5F5;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+    }
+    &__title{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    &__desc{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    &__img{
+        
+        width: 100%;
+        margin-top: 66px;
+         &img{
+            
+            max-width: 100%;
+         }
+        
+    }
+    &__button{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row ;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+    }
+    &__btn{
+        background-color: #6F2CFF;
+        border-radius: 30px;
+        border: none;
+        padding: 11px 45px 14px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff;
+        transition: .1s;
+        outline: none;
+    }
+    &__btn:hover{
+        background-color: #fff;
+        color: #6F2CFF;
+    }
+    &__btn:active{
+        background-color: #6F2CFF;
+        color: #fff;
+    }
+}
+
+@media (max-width:1020px) {
+    .hero{
+        &__img img{
+            width: 100%;
+        }
+    }
+}
+@media (max-width:730px) {
+    .hero{
+        &__desc{
+            text-align: center;
+        }
+    }
+}
+ @media (max-width:500px) {
+    .hero{
+        &__btn{
+            padding: 12px 30px;
+        }
+        &__title{
+            text-align: center;
+            font-size: 30px;
+        }
+        &__desc{
+            text-align: center;
+        }
+    }
+ }
+ @media (max-width:350px) {
+    .hero{
+        &__title{
+            line-height: 1.5;
+        }
+        &__btn{
+            padding: 10px 15px;
+        }
+    }
+ }
