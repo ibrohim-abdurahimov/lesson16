@@ -20,6 +20,23 @@ img {
      object-fit: cover;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
 .hero {
   padding: 96px 0;
   background-color: #F5F5F5;
@@ -263,5 +280,57 @@ img {
   }
   .industry__card-desc {
     font-size: 12px;
+  }
+}
+.header {
+  width: 100%;
+  background-color: dodgerblue;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+
+.navbar {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.navbar__logo img {
+  width: 10%;
+}
+.navbar__collection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+}
+.navbar__collection select {
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.navbar__collection select:hover {
+  color: #fff;
+}
+.navbar__menu {
+  display: none;
+}
+.navbar__icon {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .navbar__collection {
+    display: none;
+  }
+  .navbar__menu {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */

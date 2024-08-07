@@ -16,3 +16,16 @@
 img{
     object-fit: cover;
 }
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover{
+    color: #fff;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
